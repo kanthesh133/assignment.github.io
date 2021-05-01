@@ -1,0 +1,20 @@
+$color-primary:white;
+$buttonsecondary:#DD5A6A;
+$color-secondary:#3CADC6;
+$fontprimary:#37BE99;
+$fontscondary:#225EA8;
+$buttonprimary:#34BCE0;
+$heading-color:#22B78E;
+
+@mixin font($col, $size, $family, $weight) {
+    color:$col;
+    font-size: $size;
+    font-family: $family;
+    font-weight: $weight;
+} 
+
+@mixin Responsive {
+    @media(max-width: 768px) {
+        @content
+    }
+}
